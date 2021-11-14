@@ -1,0 +1,29 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "MERN Shopping Cart App",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/afazio1/reactwebsite.git"
+  },
+  "author": "Alexa Fazio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/afazio1/reactwebsite/issues"
+  },
+  "homepage": "https://github.com/afazio1/reactwebsite#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "concurrently": "^6.3.0",
+    "nodemon": "^2.0.15"
+  }
+}
